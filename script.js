@@ -6,7 +6,7 @@ let basketX = 160;
 let appleY = 0;
 let appleX = Math.random() * 370;
 
-// Move basket with arrow keys
+
 document.addEventListener("keydown", function(event) {
     if (event.key === "ArrowLeft" && basketX > 0) {
         basketX -= 20;
@@ -16,7 +16,7 @@ document.addEventListener("keydown", function(event) {
     basket.style.left = basketX + "px";
 });
 
-// Drop the apple
+
 function dropApple() {
     appleY += 5;
     apple.style.top = appleY + "px";
@@ -31,7 +31,6 @@ function dropApple() {
     }
 }
 
-// Reset apple position
 function resetApple() {
     appleY = 0;
     appleX = Math.random() * 370;
@@ -39,5 +38,5 @@ function resetApple() {
     apple.style.left = appleX + "px";
 }
 
-// Run game loop
+
 setInterval(dropApple, 50);
