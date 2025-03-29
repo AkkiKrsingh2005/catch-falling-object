@@ -1,0 +1,34 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    border: 2px solid black;
+    margin: auto;
+    background-color: lightblue;
+    overflow: hidden;
+}
+
+#basket {
+    width: 80px;
+    height: 40px;
+    background-color: brown;
+    position: absolute;
+    bottom: 10px;
+    left: 160px;
+    border-radius: 10px;
+}
+
+#apple {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-radius: 50%;
+}
